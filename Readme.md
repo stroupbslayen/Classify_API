@@ -4,16 +4,19 @@
 ```
 from APIClassifier import APIClassifier
 url='https://www.reddit.com/r/all/hot/.json
-APIClassifier.fromURL('new classes', url, headers = {'User-agent': 'your bot 0.1'})```
+APIClassifier.fromURL('new classes', url, headers = {'User-agent': 'your bot 0.1'})
+```
 
 - Create classes from a JSON response that you have:
 ```response={'api_key':'api value'}
-APIClassifier('API Class',response)```
+APIClassifier('API Class',response)
+```
 
 To use your new API Class:
 ```from API_Class import API_Class
 response={'api_key':'api value'}
-api=API_Class(response)```
+api=API_Class(response)
+```
 
 - From there, you can navigate attributes normally
 ```print(api.api_key)```
