@@ -28,4 +28,4 @@ Would print '*api value*'
 
 # Notes
 - Hasn't been tested in every case, so there might be some issues.
-- It can be used for any dict or list, but API responses generally have a consistant structure so there may be issues
+- It can be used for any dict or list, but API responses generally have a consistent structure so there may be issues
