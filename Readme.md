@@ -1,10 +1,11 @@
 # Creating a python file to help handle navigating a JSON API response
 
 - Create classes from a URL that returns a JSON response:
+`from APIClassifier import APIClassifier`
 
-`from APIClassifier import APIClassifier
-url='https://www.reddit.com/r/all/hot/.json
-APIClassifier.fromURL('new classes', url, headers = {'User-agent': 'your bot 0.1'})`
+`url='https://www.reddit.com/r/all/hot/.json`
+
+`APIClassifier.fromURL('new classes', url, headers = {'User-agent': 'your bot 0.1'})`
 
 - Create classes from a JSON response that you have:
 `response={'api_key':'api value'}`
