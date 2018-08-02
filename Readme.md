@@ -15,7 +15,7 @@ APIClassifier('API Class',response)
 
 To use your new API Class:
 ```py
-from API_Class import API_Class
+from api_class import API_Class
 response={'api_key':'api value'}
 api=API_Class(response)
 ```
