@@ -62,7 +62,7 @@ class Classify_API:
         output = f"{new_class}(self.items.get('{k}',dict()))"
         desc = f'Will return class {new_class}()'
         self.methods.append(f'''{new_method(clean(k),output,desc)}''')
-        new_class = APIClassifier(new_class, v, names=self.class_names)
+        new_class = Classify_API(new_class, v, names=self.class_names)
         self.classes.append(new_class.txt)
         self.class_names = new_class.get_names
 
@@ -76,7 +76,7 @@ class Classify_API:
         else:
             output = f'''({new_class}(item) for item in self.items if item)'''
         self.methods.append(f'''{new_method(clean(k),output,desc)}''')
-        new_class = APIClassifier(new_class, v[0], names=self.class_names)
+        new_class = Classify_API(new_class, v[0], names=self.class_names)
         self.classes.append(new_class.txt)
         self.class_names = new_class.get_names
 
